@@ -46,6 +46,12 @@
     letter-spacing:-0.03em;
   }
   .logo span { color:var(--sage); }
+  .logo-byline {
+    font-size:0.68rem; font-family:'DM Sans',sans-serif;
+    font-weight:500; color:var(--warm-gray);
+    letter-spacing:0.04em; margin-top:1px;
+  }
+  .logo-byline strong { color:var(--sage); font-weight:700; }
   .nav-cart {
     position:relative; cursor:pointer;
     background:var(--sage); color:#fff;
@@ -312,7 +318,10 @@
 
 <!-- NAV -->
 <nav>
-  <div class="logo">Medi<span>Shield</span></div>
+  <div>
+    <div class="logo">Medi<span>Shield</span></div>
+    <div class="logo-byline">made by <strong>srikant_</strong></div>
+  </div>
   <button class="nav-cart" onclick="toggleCart()">
     🛒 Cart <div class="cart-badge" id="cartBadge">0</div>
   </button>
@@ -479,6 +488,24 @@
 
 <!-- TOAST -->
 <div class="toast" id="toast"></div>
+
+<!-- FOOTER -->
+<footer style="text-align:center;padding:40px 20px 32px;border-top:1px solid rgba(74,124,111,0.12);margin-top:20px">
+  <div style="font-family:'Playfair Display',serif;font-size:1.2rem;font-weight:900;color:var(--charcoal);margin-bottom:6px">
+    Medi<span style="color:var(--sage)">Shield</span>
+  </div>
+  <div style="font-size:0.82rem;color:var(--warm-gray);margin-bottom:16px">
+    Personalised healthcare coverage, made simple.
+  </div>
+  <div style="display:inline-flex;align-items:center;gap:8px;background:var(--sage-pale);border-radius:50px;padding:8px 20px;font-size:0.82rem">
+    <span style="font-size:1rem">✦</span>
+    <span style="color:var(--warm-gray)">Crafted with care by</span>
+    <span style="font-weight:700;color:var(--sage);letter-spacing:0.03em">srikant_</span>
+  </div>
+  <div style="margin-top:20px;font-size:0.75rem;color:#bbb">
+    © 2026 MediShield · All rights reserved
+  </div>
+</footer>
 
 <script>
 // ─── STATE ───────────────────────────────────────
