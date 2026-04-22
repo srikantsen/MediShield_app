@@ -3,7 +3,7 @@
    Author: srikant_
 ───────────────────────────────────────────────── */
 
-// ─── STATE ───────────────────────────────────────
+// ─── STATE ──
 let currentStep = 0;
 let selectedConditions = [];
 let selectedPlan = null;
